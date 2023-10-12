@@ -1,0 +1,137 @@
+html {
+  background-color: #222222;
+  background-image: url(../images/bar.png);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  padding: 10px;
+  grid-template-areas: 
+  "header header"
+  "empty specials"
+  "empty beer"
+  "empty shots"
+  "empty cocktails"
+  "empty wine"
+  "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.space {
+  grid-area: empty;
+  width: 40%;
+}
+
+.specials {
+  grid-area: specials;
+  
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #222222;
+}
+
+.beer {
+  grid-area: beer;
+  
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #222222;
+}
+
+.shots {
+  grid-area: shots;
+  
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #222222;
+}
+
+.cocktails {
+  grid-area: cocktails;
+  
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #222222;
+}
+
+.wine {
+  grid-area: wine;
+  
+  margin-bottom: 30px;
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #222222;
+}
+
+.footer {
+  grid-area: footer;
+  
+  background-color: #946734;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
