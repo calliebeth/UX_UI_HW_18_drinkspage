@@ -2,7 +2,7 @@ html {
   background-color: #222222;
   background-image: url(../images/bar.png);
   background-repeat: no-repeat;
-  background-size: 100% 70%;
+  background-size: 100% auto;
 }
 
 /* Add a black background color to the top navigation */
